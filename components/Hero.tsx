@@ -28,7 +28,7 @@ const Hero = () => {
         </p>
 
         {/* CTA Button */}
-        <a href='www.youtube.com'
+        <a href='https://www.youtube.com'
           className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-2 px-10 rounded-full text-lg inline-flex items-center shadow-lg transform hover:scale-105 transition-transform"
         >
           Simply replace  <span className="bg-gradient-to-r px-3 py-2 from-purple-500 to-pink-500 mx-5">youtube.com</span> with <span className=" mx-5 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500">youtubes.rocks</span> while watching a video
