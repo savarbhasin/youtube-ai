@@ -41,7 +41,8 @@ const Hero = () => {
             <input onChange={handleUrlChange} type="text" className="outline-none mt-2 mb-2 px-4 py-2 w-[300px] rounded-lg border border-gray-300 bg-gray-100 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block" placeholder="Enter URL here" />
             <button onClick={(e)=>{
               e.preventDefault();
-              router.push(`/video?url=${url}`)
+              url.replace('youtube.com', 'youtube.savarbhasin.tech');
+              router.push(url);
             }} className="mt-2 mb-2 px-4 py-2 rounded-lg bg-blue-500 text-white font-bold text-sm focus:ring-blue-500 focus:ring-offset-2 focus:ring-2 hover:bg-blue-600 transition duration-150 ease-in-out">Go</button>
           </div>
         </div>
