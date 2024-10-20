@@ -1,6 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, Video, Brain, MessageCircle, Shield } from 'lucide-react';
+import { Video, Brain, MessageCircle } from 'lucide-react';
 
 const Feature = ({ icon, title, description }:{
     icon: React.ReactNode;

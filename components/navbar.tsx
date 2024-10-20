@@ -1,7 +1,5 @@
 'use client'
-import React, { useState } from 'react'
-import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import React from 'react'
 
 const Navbar = () => (
   <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
