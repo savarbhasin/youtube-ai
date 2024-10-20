@@ -12,7 +12,10 @@ const VidComponent = ()=>{
 
   return (
     <>
-      {videoId === null ? <div>Video not found</div> : <VideoChatSummary videoId={videoId} />}
+      {videoId === null ? 
+      <div className='min-h-screen text-7xl py-[7rem] bg-gray-900 text-gray-100 font-heading flex flex-col justify-center items-center'>
+        Video not found
+      </div> : <VideoChatSummary videoId={videoId} />}
     </>
   )
 }
