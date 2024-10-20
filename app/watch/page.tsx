@@ -9,7 +9,7 @@ const VidComponent = ()=>{
   const searchParams = useSearchParams()
  
   const videoId = searchParams.get('v');
-
+  
   return (
     <>
       {videoId === null ? 
