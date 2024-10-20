@@ -97,12 +97,13 @@ const ChatSection = ({ videoId }: { videoId: string }) => {
   }, [newMessage, receiveAIResponse]);
 
   return (
-    <Card className="flex flex-col h-[550px] bg-gray-900 text-white border-gray-700">
-      <CardHeader className="flex-shrink-0">
+    <Card className="relative flex flex-col h-[550px] bg-gradient-to-br from-gray-600 to-gray-800 text-white border-gray-700">
+      <div className="absolute inset-0 bg-gradient-to-tl from-purple-500 to-pink-400 opacity-25 blur-3xl" />
+      <CardHeader className="relative flex-shrink-0">
         <CardTitle className="text-lg font-semibold text-gray-100">AI Video Assistant</CardTitle>
         <CardDescription className="text-sm text-gray-400">Ask questions about the video content</CardDescription>
       </CardHeader>
-      <CardContent className="flex-1 flex flex-col overflow-hidden ">
+      <CardContent className="flex-1 flex flex-col overflow-hidden relative">
         <div ref={chatContainerRef} className="flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 pr-4 mb-4">
           {messages.map((message, index) => (
             <div key={index} className={`mb-4 ${message.user === 'You' ? 'text-right' : 'text-left'}`}>

@@ -46,7 +46,8 @@ export function VideoChatSummary({ videoId }: { videoId: string }) {
   }, [fetchSummary, videoId]);
 
   return (
-    <div className="flex flex-col min-h-screen py-[7rem] bg-gray-900 text-gray-100 font-sans">
+    <div className="relative flex flex-col min-h-screen py-[7rem] bg-gradient-to-br from-gray-600 to-gray-800 text-gray-100 font-sans">
+      {/* <div className="absolute inset-0 bg-gradient-to-tl from-purple-500 to-pink-400 opacity-25 blur-3xl" /> */}
       <main className="flex-1 p-6 grid grid-cols-3 gap-6 px-4 md:px-8 lg:px-16">
         <div className="col-span-3 lg:col-span-2 space-y-6">
           <div className="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
