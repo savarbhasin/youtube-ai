@@ -1,0 +1,17 @@
+mangum
+langchain
+langchain_community
+langchain_openai
+langchain_groq
+youtube-transcript-api
+langchain_google_genai
+pytubefix
+pydantic
+fastapi
+redis
+langchain_core
+langchain_redis
+supabase
+pgvector
+aiolimiter
+fastapi[standard]
